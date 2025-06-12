@@ -5,8 +5,8 @@ export function MyGrid() {
     <div className={styles.container}>
     <header className={styles.header1}>
   <img
-    src="https://picsum.photos/200"
-    alt="Imagem aleatória do Picsum"
+    src="https://picsum.photos/id/237/200/300"
+    alt="Imagem"
     className={styles.icon}
   />
   <h1 className={styles.title}>Foco, Força, Fé</h1>
@@ -43,7 +43,7 @@ export function MyGrid() {
           {/* My Text 2 */}
           <div className={styles.card}>
             <img
-              src="https://picsum.photos/200/300/?blur"
+              src="https://picsum.photos/200/300?random=1"
               alt="Imagem 2"
               className={styles.image}
             />
@@ -69,7 +69,7 @@ export function MyGrid() {
           {/* My Text 4 */}
           <div className={styles.card}>
             <img
-              src="https://picsum.photos/200/300/?blur=2"
+              src="https://picsum.photos/200/300.jpg"
               alt="Imagem 4"
               className={styles.image}
             />
@@ -88,11 +88,12 @@ export function MyGrid() {
             <p>Curso Técnico em Informática</p>
             <p>Programação para Internet 2025</p>
           </div>
-          <p className={styles.prof}>Aluno. Samuel Gomes Silva</p>
+          <p className={styles.prof}>Aluno. Lyedson Matheus</p>
           <div className={styles.icons}>
-            <button>📘</button>
-            <button>📸</button>
-            <button>📞</button>
+<button onclick="window.location.href='https://facebook.com'">📘</button>
+<button onclick="window.location.href='https://instagram.com'">📸</button>
+<button onclick="window.location.href='tel:+5599999999999'">📞</button>
+
           </div>
         </div>
       </footer>
