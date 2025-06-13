@@ -1,99 +1,123 @@
 import styles from "./MyGrid.module.css";
-
+import {Github, Instagram, Phone, ShieldCheck} from "lucide-react";
+const cards = [0, 1, 2, 3, 4];
 export function MyGrid() {
+  const randomNumbers = cards.map(() => Math.floor(Math.random() * 1000));
   return (
     <div className={styles.container}>
-    <header className={styles.header1}>
-  <img
-    src="https://picsum.photos/id/237/200/300"
-    alt="Imagem"
-    className={styles.icon}
-  />
-  <h1 className={styles.title}>Foco, Força, Fé</h1>
-</header>
-
+      <header className={styles.header1}>
+        <ShieldCheck />
+        <h1>Foco, Força, Fé</h1>
+      </header>
       <main className={styles.main}>
         <div className={styles.grid}>
-          {/* My Text 0 */}
+          {
           <div className={styles.card}>
             <img
-              src="https://picsum.photos/200/300?grayscale"
-              alt="Imagem 0"
-              className={styles.image}
-            />
+              
+              src={"https://picsum.photos/200/300?random=${randomNumbers[0]}"}
+            ></img>
             <h2>My Text 0</h2>
             <p>
-              Esta imagem tem efeito em escala de cinza. Ideal para efeitos visuais minimalistas e clássicos.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-
-          {/* My Text 1 */}
+          }
+          {
           <div className={styles.card}>
             <img
-              src="https://picsum.photos/seed/picsum/200/300"
-              alt="Imagem 1"
-              className={styles.image}
-            />
+              
+              src={"https://picsum.photos/200/300?random=${randomNumbers[1]}"}
+            ></img>
             <h2>My Text 1</h2>
             <p>
-              Imagem aleatória com base em uma seed. Útil para gerar visuais consistentes em testes.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-
-          {/* My Text 2 */}
+} 
+{
           <div className={styles.card}>
             <img
-              src="https://picsum.photos/200/300?random=1"
-              alt="Imagem 2"
-              className={styles.image}
-            />
+              src={"https://picsum.photos/200/300?random=${randomNumbers[2]}"}
+            ></img>
             <h2>My Text 2</h2>
             <p>
-              Imagem com efeito de desfoque. Perfeita para fundos ou elementos que não devem chamar atenção.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-
-          {/* My Text 3 */}
+}
+{
           <div className={styles.card}>
             <img
-              src="https://picsum.photos/id/870/200/300?grayscale&blur=2"
-              alt="Imagem 3"
-              className={styles.image}
-            />
+              src={"https://picsum.photos/200/300?random=${randomNumbers[3]}"}
+            ></img>
             <h2>My Text 3</h2>
             <p>
-              Uma combinação de desfoque e escala de cinza. Traz um efeito estético elegante e suave.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-
-          {/* My Text 4 */}
+}
+{
           <div className={styles.card}>
             <img
-              src="https://picsum.photos/200/300.jpg"
-              alt="Imagem 4"
-              className={styles.image}
-            />
+              src={"https://picsum.photos/200/300?random=${randomNumbers[4]}"}
+            ></img>
             <h2>My Text 4</h2>
             <p>
-              Efeito de desfoque mais intenso. Ideal para destacar o texto e deixar a imagem como fundo secundário.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
+}
         </div>
       </main>
-
-      <footer className={styles.footer2}>
+      <footer className={styles.footer}>
         <div className={styles.footerContent}>
-          <div>
-            <p>IFRN - Campus Macau</p>
-            <p>Curso Técnico em Informática</p>
-            <p>Programação para Internet 2025</p>
+          <div className={styles.footerText}>
+            <h1>IFRN - Campus Macau</h1>
+            <h1>Curso Técnico em Informática</h1>
+            <h1>Programação para Internet 2025</h1>
           </div>
-          <p className={styles.prof}>Aluno. Lyedson Matheus</p>
+          <p>Lyedson Matheus</p>
           <div className={styles.icons}>
-<button onclick="window.location.href='https://facebook.com'">📘</button>
-<button onclick="window.location.href='https://instagram.com'">📸</button>
-<button onclick="window.location.href='tel:+5599999999999'">📞</button>
-
+            <a href='https://github.com/Lyedson18' target='_blank'>
+              <Github/>
+            </a>
+            <a href='https://instagram.com/lyedson.2006/' target='_blank'>
+              <Instagram/>
+            </a>
+            <a href='tel:+5584986204846' target='_blank'>
+              <Phone/>
+            </a>
           </div>
         </div>
       </footer>
